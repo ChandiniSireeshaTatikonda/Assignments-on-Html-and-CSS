@@ -1,0 +1,168 @@
+
+<!DOCTYPE html>
+<html>
+<head>
+<style> 
+  body{
+    background-image: url(http://www.babycouture.in/blog/wp-content/uploads/2016/09/cute_little_boy-HD.jpg);
+  }
+	div {
+  width: 100px;
+  height: 100px;
+  background-color: lightpink;
+  font-size: 10px;
+}
+  #div1 {
+    color:white;
+    /*visibility: hidden;*/
+    margin-top: 50px;
+    word-break:break-all;
+  	transition-property: all;
+  	transition-delay: 1s;
+  	transition-duration: 2s;
+  	transition-timing-function: linear;
+}
+  .all:hover{
+    width: 200px;
+    height: 200px;
+    margin-left: 50px;
+    font-size: 25px;
+}
+ #div2 {
+    color:white;
+    word-wrap: normal;
+  	transition-property: width,height,border;  
+  	transition-delay: inherit;
+  	transition-duration: 1s;
+  	transition-timing-function: ease;
+    /*visibility: hidden;*/
+}
+.property:hover{
+	 width: 200px;
+    height: 200px;
+    border: 5px solid yellow;
+}
+ #div3 {
+  	transition: padding 1s ease-out 1s;
+}
+.none:hover{
+	padding:50px;
+
+}
+ #div4 {
+  		transition: transform 1s ease-in-out 1s;
+}
+.inherit:hover{
+    transform: translate(50px,50px);
+}
+table,td{
+  border: 3px solid lightpink;
+  color:white;
+  border-radius: 15px;
+  padding:40px;
+  margin-left:300px;
+}
+.collapse{
+  visibility: collapse;
+}
+
+/*Vertical-align*/
+p{
+    font-size:20pt;
+    color:white;
+  }
+  #sub{
+    font-size:12pt;
+    background-color: yellow;
+    color:red;
+    vertical-align: sub; 
+    white-space: normal;
+  }
+  #super{
+    font-size:12pt;
+    color:red;
+    background-color: yellow;
+    vertical-align: super;
+    white-space: nowrap;
+  }
+  .text{
+    white-space: pre; 
+  }
+   #text-top{
+    font-size:12pt;
+    background-color: yellow;
+     color:red;
+    vertical-align: text-top;
+  }
+  #text-bottom{
+    font-size:12pt;
+    background-color: yellow;
+     color:red;
+    vertical-align: text-bottom;
+  }
+  #baseline{
+    font-size:12pt;
+    background-color: yellow;
+     color:red;
+    vertical-align: baseline;
+  }
+  #measurement{
+    font-size:15pt;
+    background-color: yellow;
+     color:red;
+    vertical-align: 10px;
+  }
+
+</style>
+</head>
+<body>
+  <h1 style="color:white;">Small Demo On Html and CSS</h1>
+<div class="all" id="div1">linear-This div contains a very long word:thisisaveryveryveryveryveryverylongword.</div><br>
+<div class="property" id="div2">ease-This div contains a very long word: thisisaveryveryveryveryveryverylongword.</div><br>
+<div class="none" id="div3">ease-in</div><br>
+<div class="inherit" id="div4">ease-out</div><br>
+<!--Visibility-collapse-->
+<table>
+  <tr>
+    <td >Peter</td>
+    <td>Griffin</td>
+  </tr>
+  <tr class="collapse">
+    <td>Lois</td>
+    <td>Griffin</td>
+  </tr>
+   <tr>
+    <td>Chandu</td>
+    <td>Siri</td>
+  </tr>
+
+<!--Vertical-align-->
+
+<p>This is some text. This is some text. This is some text.
+This is some text. This<span id="sub">Vertical-align </span> 
+is some text. This is some text.This is some text. This is some 
+text.</p> This is some text.This is some text. This is some
+text. This is some text. 
+
+<p>This is some text. This is some text. This is some text.
+This is some text. This<span id="super">Vertical-align </span>
+is some text. This is some text.This is some text. This is some
+text.This is some text.This is some text. This is some text.
+ This is some text.</p>
+
+
+<p class="text">This is some text. This is some text. This is some text.
+This is some text.  This<span id="text-top">Vertical-align </span>
+is some text. This is some text.This is some text. This is some text.
+This is some text.This is some text. This is some text. This is 
+some text.</p> 
+
+<p>An image with a default alignment. An image with a default alignment.<span id="text-bottom"> Vertical-align </span>An image with a default alignment.An image with a default alignment.</p>
+
+<p>An image with a default alignment. An image with a default alignment.<span id="baseline"> Vertical-align </span>An image with a default alignment.An image with a default alignment.</p>
+
+<p>An image with a default alignment. An image with a default alignment.<span id="measurement"> Vertical-align </span>An image with a default alignment.An image with a default alignment.</p>
+
+</table>
+</body>
+</html>
